@@ -7,7 +7,6 @@ import Toolbar from "./toolbar";
 import { api } from "../../../../convex/_generated/api";
 interface DocumentPageProps{
     preloadeDocument:Preloaded<typeof api.documents.getById>,
-    params:Promise<{documentId:string}>
 }
 
 
