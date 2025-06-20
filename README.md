@@ -30,7 +30,7 @@ UI design with shadcn/ui and Tailwind CSS.
 🧩 State management with Zustand
 
 ## Live Demo 
-[https://documentary-reach-editor.vercel.app/documents/j57fch5wngbxzqmqv9hd0s941d7j7zhd](Documentary)
+[https://documentary-reach-editor.vercel.app/](Documentary)
 
 # how to use 
 fork the repo 
@@ -38,12 +38,11 @@ fork the repo
 bash
 open your cmd and cd c:
 git clone <url>
+cd docs
 npm install --legacy-peer-deps
  rename **.env.example** to .env.local
 and paste your variales  
-
 ```
-
 to get these variables you need to create accounts on 
 
 [Clerk](https://clerk.com)
@@ -84,8 +83,8 @@ to enable organization go to clerck -> dashboard->organization and configure and
 add this to jwt templates under claims => and save    "organization_id":"{{org.id}}"
 ```
 
-
 ## live blocks setup
+```
 start with liveblocks create acc for collaboration create new project after sign in
 
 npm install @liveblocks/client@2.12.2 @liveblocks/react@2.12.2 @liveblocks/react-ui@2.12.2 @liveblocks/react-tiptap@2.12.2 --legacy-peer-deps
@@ -98,5 +97,7 @@ npm i ..... failed files
 npm i y-protocols@1.0.6 --legacy-peer-deps
 npm i @liveblocks/node@2.12.2 --legacy-peer-deps
 ```
-
-
+**after installing all dependecies** 
+run `npm run dev` open `localhsot:3000 `
+enjoy (_-_) 
+### How to deploy on vercel 
