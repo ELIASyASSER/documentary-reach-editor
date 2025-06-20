@@ -23,7 +23,7 @@ UI design with shadcn/ui and Tailwind CSS.
 
 🎨 Modern and responsive UI built with shadcn/ui and Tailwind CSS
 
-🧭 Custom search params management via nuqs
+🧭 Next js server actions 
 
 🗂️ Multi-user document access and editing permissions
 
