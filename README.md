@@ -74,7 +74,9 @@ npm install @tiptap/extension-text-align@2.10.2 --legacy-peer-deps
 ## convex setup
 ```
 npm install convex --legacy-peer-deps data base and run npx convex dev
-get your public key from convex ->dashboard-> project 
+get your public key from convex ->dashboard-> project
+
+to see logs and if there are any issues with your database  add new terminal `cd docs` run `npm convex dev` 
 ```
 ## clerk setup
 ```
@@ -100,4 +102,27 @@ npm i @liveblocks/node@2.12.2 --legacy-peer-deps
 **after installing all dependecies** 
 run `npm run dev` open `localhsot:3000 `
 enjoy (_-_) 
-### How to deploy on vercel 
+## How to deploy on vercel
+after creating a project on vercel 
+**make convex production insted of development**
+
+**best practice follow convex docs >deploy on vercel because this command might be changed**
+### override build command
+override build command and paste `npx convex deploy --cmd 'npm run build'`
+### evironment variables
+GET YOUR `CONVEX_DEPLOY_KEY`  from convex > dashboard>settings>generate production deploy key >call it any name 
+and copy your key
+add these variables too
+**go to liveblocks >api keys >generate secrect api key**
+CONVEX_DEPLOYMENT=<convex will do this> # team: elias-yasser, project: docs-87c2e
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=<get from clerk>
+CLERK_SECRET_KEY=<get from clerk>
+LIVEBLOCKS_SECRET_KEY=<get from live blocks >
+
+## override install command
+ #### got to your project settings override install command make it
+`npm install --legacy-peer-deps` 
+finally deploy  if *deployment failed* make it 
+`bun install`
+
+
