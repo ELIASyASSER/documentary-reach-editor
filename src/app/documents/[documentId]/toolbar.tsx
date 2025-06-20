@@ -2,7 +2,7 @@
 import { cn } from "@/lib/utils";
 import { useEditorStore } from "@/store/use-editor-store";
 import { Separator } from "@/components/ui/separator";
-import { AlignCenter, AlignCenterIcon, AlignJustify, AlignJustifyIcon, AlignLeftIcon, AlignRightIcon, BoldIcon, ChevronDownIcon, HighlighterIcon, ImageIcon, ItalicIcon, Link2Icon, ListCollapseIcon, ListIcon, ListOrderedIcon, ListTodoIcon, LucideIcon, MessageSquarePlusIcon, MinusIcon, PlusIcon, Printer, PrinterIcon, Redo2Icon, RemoveFormattingIcon, SearchIcon, SpellCheck, StrikethroughIcon, UnderlineIcon, Undo2Icon, UploadIcon } from "lucide-react";
+import {  AlignCenterIcon, AlignJustifyIcon, AlignLeftIcon, AlignRightIcon, BoldIcon, ChevronDownIcon, HighlighterIcon, ImageIcon, ItalicIcon, Link2Icon, ListCollapseIcon, ListIcon, ListOrderedIcon, ListTodoIcon, LucideIcon, MessageSquarePlusIcon, MinusIcon, PlusIcon, PrinterIcon, Redo2Icon, RemoveFormattingIcon, SearchIcon, SpellCheck, StrikethroughIcon, UnderlineIcon, Undo2Icon, UploadIcon } from "lucide-react";
 
 import { DropdownMenu,
     DropdownMenuContent,

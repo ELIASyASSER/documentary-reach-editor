@@ -1,7 +1,6 @@
 "use client"
 import {  useOthers,useSelf } from "@liveblocks/react/suspense";
 import { ClientSideSuspense } from "@liveblocks/react";
-import { currentUser } from "@clerk/nextjs/server";
 import { Separator } from "@/components/ui/separator";
 const AVATAR_SIZE = 36;
 

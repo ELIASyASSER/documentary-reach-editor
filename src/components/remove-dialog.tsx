@@ -34,7 +34,7 @@ const [isDeleting,setIsDeleting] = useState(false)
         <AlertDialogContent onClick={(e)=>e.stopPropagation()}>
             <AlertDialogHeader>
                 <AlertDialogTitle>Are You sure</AlertDialogTitle>
-                <AlertDialogDescription>this action is not reverse you can't restore document</AlertDialogDescription>
+                <AlertDialogDescription>this action is not reverse you cant restore document</AlertDialogDescription>
             </AlertDialogHeader>
             <AlertDialogFooter>
                 <AlertDialogCancel onClick={(e)=>e.stopPropagation()}>

@@ -7,7 +7,7 @@ import {Table,
     TableRow,
     TableCell,
 } from "@/components/ui/table"
-import { Loader, LoaderIcon } from "lucide-react"
+import {  LoaderIcon } from "lucide-react"
 import { DocumentRow } from "./document"
 import { Button } from "@/components/ui/button"
 interface DocumentTableProps{

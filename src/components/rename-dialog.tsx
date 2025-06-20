@@ -1,7 +1,6 @@
 "use client"
 
 import { Dialog,
-    DialogClose,
     DialogContent,
     DialogDescription,
     DialogHeader,
@@ -36,7 +35,7 @@ const onSubmit = (e:React.FormEvent<HTMLFormElement>)=>{
     update({id:documentId,title:title.trim()||"Untitled"})
     .then(()=>setOpen(false))
     .then(()=>{toast.success("document updated",{position:"top-center"});})
-    .catch(()=>{
+    .catch((_)=>{
         toast.error("only admin can modify docs",{position:"top-center"})
         setOpen(false)
         })

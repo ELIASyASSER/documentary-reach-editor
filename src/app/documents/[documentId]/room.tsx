@@ -32,7 +32,7 @@ const fetchUsers = useCallback(
     try {
       const list = await getUsers()
       setUsers(list)
-    } catch (error) {
+    } catch (_) {
       toast.error("failed to fetch users")
     }
 },[])
@@ -67,7 +67,7 @@ useEffect(()=>{
       return docs.map((doc)=>({
         id:doc.id,
         name:doc.name,
-        
+
       }))
      }}>
       
