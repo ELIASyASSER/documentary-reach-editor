@@ -1,5 +1,7 @@
+
 # 📄 Documentary – Rich Text Editor Platform (Google Docs Clone)
 ## Description
+
 
 A collaborative, feature-rich document editing platform inspired by Google Docs. Built using Next.js, Tiptap, Convex, Clerk, and Liveblocks, 
 
@@ -11,6 +13,7 @@ This full-stack web app demonstrates advanced use of React, serverless data arch
 
 UI design with shadcn/ui and Tailwind CSS.
 
+[image](./DOCS.png)
 ### 🔧 Key Features:
 
 ✍️ Real-time collaborative editing using Liveblocks and Tiptap
@@ -23,14 +26,31 @@ UI design with shadcn/ui and Tailwind CSS.
 
 🎨 Modern and responsive UI built with shadcn/ui and Tailwind CSS
 
-🧭 Next js server actions 
-
 🗂️ Multi-user document access and editing permissions
 
 🧩 State management with Zustand
 
 ## Live Demo 
 [Documentary](https://documentary-reach-editor.vercel.app/)
+
+
+
+
+
+
+
+## 🛠️ Tech Stack:
+- Frontend: React, Next.js App Router, Tailwind CSS, shadcn/ui
+- typescript for type safety 
+- Editor Engine: Tiptap v2
+
+- Collaboration: Liveblocks, YJS
+
+- Auth & Access: Clerk with organization and JWT claims
+
+- Database: Convex (serverless, reactive backend)
+
+- State Management: Zustand
 
 # how to use 
 fork the repo 
