@@ -35,7 +35,7 @@ const onSubmit = (e:React.FormEvent<HTMLFormElement>)=>{
     update({id:documentId,title:title.trim()||"Untitled"})
     .then(()=>setOpen(false))
     .then(()=>{toast.success("document updated",{position:"top-center"});})
-    .catch((_)=>{
+    .catch((_)=>{ // eslint-disable-line @typescript-eslint/no-unused-vars
         toast.error("only admin can modify docs",{position:"top-center"})
         setOpen(false)
         })

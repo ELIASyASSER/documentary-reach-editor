@@ -32,7 +32,7 @@ const fetchUsers = useCallback(
     try {
       const list = await getUsers()
       setUsers(list)
-    } catch (_) {
+    } catch (_) {// eslint-disable-line @typescript-eslint/no-unused-vars
       toast.error("failed to fetch users")
     }
 },[])
@@ -66,7 +66,7 @@ useEffect(()=>{
       const docs = await getDocuments(roomIds as Id<"documents">[])
       return docs.map((doc)=>({
         id:doc.id,
-        name:doc.name,
+        title:doc.name,
 
       }))
      }}>

@@ -7,7 +7,7 @@ export const Navbar = ()=>{
         <section className="flex gap-3 shrink-0 items-center pr-6 pt-6">
             <Link href={"/"}>
             <Image src={"/logo.svg"} alt="logo" width={36} height={36} />
-            <h3 className="text-xl">Documetary</h3>
+            <h3 className="text-xl">Documentary</h3>
             </Link>
         </section>
         <SearchInput/>

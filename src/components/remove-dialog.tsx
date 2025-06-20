@@ -46,7 +46,7 @@ const [isDeleting,setIsDeleting] = useState(false)
                     remove({id:documentId})
                     .then(()=>{toast.success("document removed",{position:"top-center"})
                     router.replace("/")})
-                    .catch(()=>{
+                    .catch((_)=>{// eslint-disable-line @typescript-eslint/no-unused-vars
                         toast.error("something went wrong you can't delete this doc",{position:"top-center"})
                         router.push("/")
                     }

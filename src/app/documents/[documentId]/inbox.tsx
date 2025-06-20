@@ -41,6 +41,7 @@ const InboxMenu =()=>{
         </DropdownMenuTrigger>
         <DropdownMenuContent align="end" className="w-auto">
                 {inboxNotifications.length > 0?(
+
                     <InboxNotificationList>
                         {
                             inboxNotifications.map((notif)=>{

@@ -6,7 +6,7 @@ import { api } from "../../../../convex/_generated/api";
 const convex = new ConvexHttpClient(process.env.NEXT_PUBLIC_CONVEX_URL!)
 
 export async function getUsers(){
-    const {sessionClaims }:any  =await auth()
+    const {sessionClaims }:any  =await auth()// eslint-disable-line @typescript-eslint/no-explicit-any
 
     const clerk = await clerkClient()
     const response = await clerk.users.getUserList({

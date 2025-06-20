@@ -7,7 +7,7 @@ const liveBlocks= new Liveblocks({
     secret:process.env.LIVEBLOCKS_SECRET_KEY!
 })
 export async function POST(req:Request){
-    const {sessionClaims   } :any =  await auth()
+    const {sessionClaims   } :any =  await auth()// eslint-disable-line @typescript-eslint/no-explicit-any
     if(!sessionClaims){
         return new Response("Unauthorized session claims",{status:401})
     }

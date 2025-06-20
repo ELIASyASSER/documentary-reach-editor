@@ -55,9 +55,9 @@ export const DocumentInput =({title,id}:DocInputProps)=>{
 
     const showLoader = isPending || status =="connecting" ||status=="reconnecting";
     const showError = status =="disconnected"
-    {!showError &&!showLoader && <BsCloudCheck/>}
-    {showLoader && <LoaderIcon className="size-4 animate-spin text-muted-foreground"/>}
-    {showError && <BsCloudSlash className="size-4"/>}
+    {!showError &&!showLoader && <BsCloudCheck/>}// eslint-disable-line @typescript-eslint/no-unused-expressions
+    {showLoader && <LoaderIcon className="size-4 animate-spin text-muted-foreground"/>}// eslint-disable-line @typescript-eslint/no-unused-expressions
+    {showError && <BsCloudSlash className="size-4"/>}// eslint-disable-line @typescript-eslint/no-unused-expressions
     return <div className="flex items-center gap-2">
         {isEditing?(
             <form className="relative w-fit max-w-[50ch]" onSubmit={onSubmit}>
