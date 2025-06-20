@@ -13,7 +13,7 @@ This full-stack web app demonstrates advanced use of React, serverless data arch
 
 UI design with shadcn/ui and Tailwind CSS.
 
-[image](./DOCS.png)
+![image](./DOCS.png)
 ### 🔧 Key Features:
 
 ✍️ Real-time collaborative editing using Liveblocks and Tiptap
