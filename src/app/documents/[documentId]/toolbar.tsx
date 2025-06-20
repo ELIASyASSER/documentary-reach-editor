@@ -29,6 +29,7 @@ interface ToolBarBtnProps{
 const TextColorBtn = ()=>{
     const {editor} = useEditorStore()
     const value = editor?.getAttributes("textStyle").color ||"#000000";
+    
     const onChange = (color:ColorResult)=>{
         editor?.chain().focus().setColor(color.hex).run()
     }
