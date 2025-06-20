@@ -30,7 +30,7 @@ UI design with shadcn/ui and Tailwind CSS.
 🧩 State management with Zustand
 
 ## Live Demo 
-[https://documentary-reach-editor.vercel.app/](Documentary)
+[Documentary](https://documentary-reach-editor.vercel.app/)
 
 # how to use 
 fork the repo 
